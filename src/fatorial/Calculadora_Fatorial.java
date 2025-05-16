@@ -2,6 +2,10 @@ package fatorial;
 
 public class Calculadora_Fatorial {
     public static int calcular(int n) {
-        return 1;
+        int resultado = 1;
+        for (int i = 2; i <= n; i++) {
+            resultado *= i;
+        }
+        return resultado;
     }
 }
